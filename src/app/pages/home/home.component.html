@@ -1,0 +1,17 @@
+<div class="container">
+    <!-- <button (click)="startSlider()">Start Slider</button> -->
+    <div id="slides" *ngFor="let item of sliderList index">
+        <div class="slide">
+            <ng-container *ngIf="item.type=='jpg'; then thenTemplate; else elseTemplate"></ng-container>
+            <ng-template #thenTemplate>
+                <img [src]="item.url" alt="">
+
+            </ng-template>
+            <ng-template #elseTemplate>
+                <video>
+                    <source  [src]="item.url" type="video/mp4">
+                </video>
+            </ng-template>
+        </div>
+    </div>
+</div>
