@@ -25,7 +25,7 @@ let currentSlide = this.sliderIndex;
     this.sliderIndex++;
     slides[this.sliderIndex].className = 'slide showing';
     setTimeout(this.startSlider, 3000);
-  }
+  }  
   // public startSlider(): void {
   //   console.log(this.sliderIndex);
 
