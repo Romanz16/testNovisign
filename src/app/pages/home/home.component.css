@@ -10,23 +10,27 @@
     padding: 0px;
     margin: 0px;
     list-style-type: none;
+    width: 400px;
 }
  
 .slide {
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
+
+    opacity: 0;
     z-index: 1;
- 
+
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s;
 }
- 
+ .slide img,  .slide video{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+ }
 .showing {
     opacity: 1;
     z-index: 2;
