@@ -1,5 +1,5 @@
 <div class="container">
-    <button (click)="startSlider(0)">Start Slider</button>
+    <div class="btnStart" (click)="startSlider(0)">Start Slider</div>
     <div id="slides" >
         <div *ngFor="let item of sliderList; let i=index" [attr.id]="'slide'+i" class="slide">
             <ng-container *ngIf="item.type=='jpg'; then thenTemplate; else elseTemplate"></ng-container>
